@@ -1,8 +1,8 @@
-import React, { useEffect, useState, useRef } from 'react'
-import { Meta, Story } from '@storybook/react'
+import React, { useEffect, useState, useRef } from 'react';
+import { Meta, Story } from '@storybook/react';
 // import StoriesLayout from "StoriesLayout";
 
-import ButtonComponent from './button'
+import ButtonComponent from './button';
 
 export default {
   title: 'Atoms/Button',
@@ -22,11 +22,11 @@ export default {
       },
     },
   },
-} as Meta
+} as Meta;
 
-const Template: Story<any> = (args) => (
+const Template: Story<React.Component> = (args) => (
   <>
-    <span className="info">Primary</span>
+    <span className={'info'}>Primary</span>
     <ButtonComponent
       children={args.children}
       onClick={args.onClick}
@@ -35,29 +35,29 @@ const Template: Story<any> = (args) => (
       {...args}
     />
 
-    <span className="info">Gradient</span>
+    <span className={'info'}>Gradient</span>
     <ButtonComponent
       children={args.children}
       onClick={args.onClick}
       type={args.type}
-      backColor="gradient"
+      backColor={'gradient'}
     />
 
-    <span className="info">Black</span>
+    <span className={'info'}>Black</span>
     <ButtonComponent
       children={args.children}
       onClick={args.onClick}
       type={args.type}
-      backColor="black"
+      backColor={'black'}
     />
   </>
-)
+);
 
-export const Default = Template.bind({})
-Default.parameters = {}
+export const Default = Template.bind({});
+Default.parameters = {};
 Default.args = {
   width: '300px',
   children: 'TEST',
   type: 'none',
   backColor: 'primary',
-}
+};

@@ -7,15 +7,13 @@ import React, { useEffect, useState, useRef } from 'react';
 // import {} from '@fortawesome/free-regular-svg-icons'; // outline 타입 아이콘
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // HOC
 
-import StyledButton from './button_style';
+import StyledButton from './buttonStyle';
 
 const ButtonComponent: React.FC<any> = (props) => {
   return (
-    <>
-      <StyledButton onClick={props.onClick} {...props}>
-        {props.children}
-      </StyledButton>
-    </>
+    <StyledButton onClick={props.onClick} {...props}>
+      {props.children}
+    </StyledButton>
   );
 };
 
