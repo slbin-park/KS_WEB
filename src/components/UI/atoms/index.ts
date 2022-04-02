@@ -1,13 +1,9 @@
-
 import Button from './button';
 
-
 const Atoms = {
-    Button,
+  Button,
 };
 
 export default Atoms;
 
-export {
-    Button,
-};
+export { Button };
