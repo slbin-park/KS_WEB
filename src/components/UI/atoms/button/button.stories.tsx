@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Meta, Story } from '@storybook/react';
 // import StoriesLayout from "StoriesLayout";
-
+import {ButtonType} from './buttonType';
 import ButtonComponent from './button';
 
 export default {
@@ -24,32 +24,15 @@ export default {
   },
 } as Meta;
 
-const Template: Story<React.Component> = (args) => (
+const Template: Story<ButtonType> = (args) => (
   <>
     <span className={'info'}>Primary</span>
     <ButtonComponent
       children={args.children}
-      onClick={args.onClick}
       type={args.type}
-      backColor={args.color}
       {...args}
     />
 
-    <span className={'info'}>Gradient</span>
-    <ButtonComponent
-      children={args.children}
-      onClick={args.onClick}
-      type={args.type}
-      backColor={'gradient'}
-    />
-
-    <span className={'info'}>Black</span>
-    <ButtonComponent
-      children={args.children}
-      onClick={args.onClick}
-      type={args.type}
-      backColor={'black'}
-    />
   </>
 );
 
