@@ -12,7 +12,7 @@ export default {
     backColor: {
       control: {
         type: 'select',
-        options: ['primary', 'gradient', 'black'],
+        options: ['primary', 'gradient', 'black','blue'],
       },
     },
     type: {
@@ -31,6 +31,7 @@ const Template: Story<ButtonType> = (args) => (
       children={args.children}
       type={args.type}
       {...args}
+      width = 'blue'
     />
 
   </>
@@ -39,7 +40,7 @@ const Template: Story<ButtonType> = (args) => (
 export const Default = Template.bind({});
 Default.parameters = {};
 Default.args = {
-  width: '300px',
+  width: 'black',
   children: 'TEST',
   type: 'none',
   backColor: 'primary',
