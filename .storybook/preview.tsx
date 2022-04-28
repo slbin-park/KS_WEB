@@ -1,7 +1,8 @@
-import React from "react";
-import { ThemeProvider } from "styled-components";
-import GlobalStyle from "../styles/globals";
-import Head from "next/head";
+import React from 'react';
+import { ThemeProvider } from 'styled-components';
+import GlobalStyle from '../styles/globals';
+import Head from 'next/head';
+
 export const decorators = [
   (Story) => (
     <ThemeProvider theme={GlobalStyle}>
@@ -19,7 +20,7 @@ export const decorators = [
 ];
 
 export const parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },
+  actions: { argTypesRegex: '^on[A-Z].*' },
   controls: {
     matchers: {
       color: /(background|color)$/i,

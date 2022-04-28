@@ -1,7 +1,5 @@
-const Molecules = {
-};
+const Molecules = {};
 
 export default Molecules;
 
-export {
-};
+export {};
