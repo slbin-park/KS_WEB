@@ -10,6 +10,8 @@ Library & Frameworks
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
 ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+![Redux]<img src="https://img.shields.io/badge/이름-색상코드?style=flat-square&logo=Redux&logoColor=purple"/>
+<img src="https://img.shields.io/badge/redux-#764ABC?style=flat-square&logo=로고명&logoColor=로고색"/>
 #764ABC
 
 with
