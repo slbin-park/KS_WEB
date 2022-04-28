@@ -1,7 +1,10 @@
+
 import Document, { Html, Head, Main, NextScript, DocumentContext } from "next/document";
 import { ServerStyleSheet } from "styled-components";
 
-class MyDocument extends Document {
+// styled-components running code for next js
+class CustomDocument extends Document {
+
   static async getInitialProps(ctx: DocumentContext) {
     const sheet = new ServerStyleSheet();
     const originalRenderPage = ctx.renderPage;
@@ -26,20 +29,19 @@ class MyDocument extends Document {
       sheet.seal();
     }
   }
-
-  render() {
-    return (
-      <Html>
-        <Head>
-          // 생략
-        </Head>
-        <body>
-          <Main />
-          <NextScript />
-        </body>
-      </Html>
-    );
-  }
+    render() {
+        return (
+            <Html>
+            <Head>
+            </Head>
+            <body>
+                <Main/>
+                <NextScript/>
+                <div id = "portal"/>
+            </body>
+            </Html>
+        );
+    }
 }
 
-export default MyDocument;
+export default CustomDocument;

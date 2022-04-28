@@ -1,19 +1,20 @@
 import type { AppProps } from "next/app";
-import NavBar from "../src/components/UI/molecules/navbar";
+
+import SideMenu from '../src/components/UI/molecules/sideMenu/sideMenu';
 
 function MyApp({ Component, pageProps }: AppProps) {
-    return(
-      <>
-        <nav>
-          <NavBar/>
-        </nav>
-        <section id = "MainSection">
-          <Component {...pageProps} id = "app" />
-        </section>
-        <footer>
-        </footer>
-      </>
-    );
-  }
-  
-  export default MyApp
+  return(
+    <>
+      <nav>
+        <SideMenu/>
+      </nav>
+      <section id = "MainSection">
+        <Component {...pageProps} id = "app" />
+      </section>
+      <footer>
+      </footer>
+    </>
+  );
+}
+
+export default MyApp
