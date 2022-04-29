@@ -4,11 +4,11 @@ import { ButtonType } from './buttonType';
 
 const StyledButton = styled.button.attrs((props) => ({}))<ButtonType>`
   ${(props) => {
-    const color = props.width;
+    const middle = props.theme.palette.$color_middle;
 
   return css`
     background-repeat: no-repeat;
-    color: ${color};
+    color: ${middle};
     width: 100%;
     height: 45px;
     border: none;
