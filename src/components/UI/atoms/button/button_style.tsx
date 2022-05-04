@@ -5,7 +5,7 @@ import { ButtonType } from './buttonType';
 const StyledButton = styled.button.attrs((props) => ({}))<ButtonType>`
   ${(props) => css`
     background-repeat: no-repeat;
-    background-color: black;
+    background-color: lightgray;
     color: #fff;
     width: 140px;
     height: 45px;

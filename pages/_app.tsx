@@ -1,12 +1,12 @@
 import type { AppProps } from "next/app";
 
-import SideMenu from '../src/components/UI/molecules/sideMenu/sideMenu';
+import NavBar from '../src/components/UI/organisms/navBar/navBar';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return(
     <>
       <nav>
-        <SideMenu/>
+        <NavBar/>
       </nav>
       <section id = "MainSection">
         <Component {...pageProps} id = "app" />

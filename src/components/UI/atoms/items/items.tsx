@@ -1,12 +1,9 @@
 import React from 'react';
 import Link from "next/link";
 
-import { Profile, UserName, Items } from './sideItems_style';
+import { ItemsContainer } from './items_style'; 
 
-export default function SideItems(props) {
-    const profileName = {title: "profile name", article: "Garry"};
-    const profileImg = {title: "profile img", path: "img/profile.jpg"};
-
+export default function Items(){
     const menu = [
         { title: "Home", path: "/" },
         { title: "Menu_2", path: "/menu/Menu_2" },
@@ -14,20 +11,18 @@ export default function SideItems(props) {
         { title: "Menu_4", path: "/menu/Menu_4" }
     ];
     return(
-        <>
-        <Profile src = { profileImg.path } { ...props }/>
-        <UserName>Garry</UserName>
+    <>
         {menu.map((menu, index) => {
             return (
                 // eslint-disable-next-line react/jsx-key
-                <Items>
+                <ItemsContainer>
                     <Link href = {menu.path} key={index}>
                         <a className = "menu"><Item menu={menu}/></a>
                     </Link>
-                </Items>
+                </ItemsContainer>
             );
         })}
-        </>
+    </>
     );
 }
 
