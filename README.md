@@ -1,15 +1,20 @@
-# UMC 동아리 홈페이지
+# 🍎Garry's repository
 
+## 메모장
++ 스토리북은 나중에 추가하겠습니다...
++ 드롭다운도 나중에...
 
-# git 사용법
-## 커밋 , 푸시
-1. git add .
-2. git commit -m '메세지'
-3. git push
+<hr/>
 
-## 풀
-git pull origin main
+## Used fucntion
+Library & Frameworks
 
-## 브랜치 이동방법
-git checkout 브랜치명
-예) git checkout chunsik
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+<img src="https://img.shields.io/badge/Reudx-764ABC?style=for-the-badge&logo=Redux&logoColor=white">
+<img src="https://img.shields.io/badge/StoryBook-FF4785?style=for-the-badge&logo=storybook&logoColor=white">
+
+with
+
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+<img src="https://img.shields.io/badge/Yarn-2C8EBB?style=for-the-badge&logo=yarn&logoColor=white">
