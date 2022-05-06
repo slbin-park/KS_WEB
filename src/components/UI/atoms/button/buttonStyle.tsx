@@ -9,7 +9,7 @@ const StyledButton = styled.button.attrs((props) => ({}))<ButtonType>`
   return css`
     background-repeat: no-repeat;
     color: ${color};
-    width: 100%;
+    width: 50%;
     height: 45px;
     border: none;
     padding: 5px 10px;

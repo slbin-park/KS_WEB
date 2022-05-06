@@ -18,23 +18,23 @@ export default {
     type: {
       control: {
         type: 'select',
-        options: ['submit', 'none'],
+        options: ['submit', 'none','check'],
       },
     },
   },
 } as Meta;
 
 const Template: Story<ButtonType> = (args) => (
-  <>
-    <span className={'info'}>Primary</span>
+
+    
     <ButtonComponent
       children={args.children}
       type={args.type}
       {...args}
-      width = 'blue'
+      width = {"blue"}
     />
 
-  </>
+  
 );
 
 export const Default = Template.bind({});
