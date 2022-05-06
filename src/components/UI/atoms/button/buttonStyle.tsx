@@ -4,6 +4,7 @@ import { ButtonType } from './buttonType';
 
 const StyledButton = styled.button.attrs((props) => ({}))<ButtonType>`
   ${(props) => {
+    
     const middle = props.theme.palette.$color_middle;
 
   return css`
