@@ -46,6 +46,12 @@ module.exports = {
     'react/function-component-definition': 1,
   },
   settings: {
+    "import/no-extraneous-dependencies": [
+      "error", 
+      {"devDependencies": 
+      ["**/*.test.ts", "**/*.test.tsx"]
+    }
+  ],
     'import/resolver': {
       node: {
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
