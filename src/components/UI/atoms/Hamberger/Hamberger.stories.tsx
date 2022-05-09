@@ -1,13 +1,31 @@
 import React from 'react';
 import { Meta } from '@storybook/react'
 
-import { HambergerIcon } from './Hamberger_style';
+import Hamberger from './Hamberger';
 
 export default {
     title: 'Atoms/Hamberger',
-    component: HambergerIcon,
+    component: Hamberger,
 } as Meta
 
-export const Default = () => (
-    <HambergerIcon/>     
+const Template_Clicked = () => (
+    <>
+        <>
+        <Hamberger click={true} /><br/>
+        <p className="info">Clicked</p>
+        </>
+    </>
 )
+
+const Template_NotClicked = () => (
+    <>
+        <>
+        <Hamberger click={false} /><br/>
+        <p className="info">Not Clicked</p>
+        </>
+    </>
+)
+
+export const NotClicked = Template_NotClicked.bind({})
+export const Clicked = Template_Clicked.bind({})
+// export const Default = () => <Hamberger/> 

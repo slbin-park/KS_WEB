@@ -9,13 +9,20 @@ export const ItemsContainer = styled.div`
     text-decoration: none;
     width: 270px;
     text-align: center;
-    .menu{
+    z-index: 9999;
+    a{
         text-decoration: none;
-        color: white;
+        color: #f0f3f5;
         font-size: 20px;
+        transition: all 0.3s;
     }
-    .menu:hover{
-        color: crimson;
-        background-color: tomato;
+    a:hover{
+        color: #8492A7;
+        background-color: #336BC5;
+    }
+    .menu_drop:hover{
+        font-size: 28px;
     }
 `;
+
+export default ItemsContainer;

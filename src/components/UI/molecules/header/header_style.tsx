@@ -8,13 +8,13 @@ export const HeaderContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     color: white;   font-size: 18px;
-    background-color: tomato;
+    background-color: #336BC5;
     position: fixed;
-    z-index: 9990;
+    z-index: 9900;
 `;
 
 export const Hamberger = styled.div`
-    position: relative;
+    position: fixed;
     font-size: 30px;    color: white;
     padding: 5px;
     width: 40px;    left: 15px;

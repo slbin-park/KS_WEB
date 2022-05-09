@@ -9,7 +9,7 @@ export default function NavItems(props) {
         <>
         <Logo>
             <Link href = "/">
-                <span></span>
+                <a className = "LogoImg">KS WEB</a>
             </Link>
         </Logo>
         <Register>

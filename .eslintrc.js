@@ -11,6 +11,9 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
     'next',
   ],
   parserOptions: {
@@ -23,7 +26,12 @@ module.exports = {
   rules: {
     'prettier/prettier': 0,
     "react/jsx-filename-extension":["warn",{"extensions":[".tsx"]} ],
-    'react/function-component-definition': 'error',
+    "react/function-component-definition": [
+      2,
+      {
+        namedComponents: "function-declaration",
+      },
+    ],
     'import/extensions': [
        'error', 
        'ignorePackages', 
@@ -35,17 +43,21 @@ module.exports = {
          json: 'never', 
         }, 
       ],
+      "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+      "camelcase": ["error", {"properties": "never"}],
   },
   settings: {
-    "import/no-extraneous-dependencies": [
-      "error", 
-      {"devDependencies": 
-      ["**/*.test.ts", "**/*.test.tsx"]
-    }
-  ],
+    // "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+  //   "import/no-extraneous-dependencies": [
+  //     "error", 
+  //     {"devDependencies": 
+  //     ["**/*.test.ts", "**/*.test.tsx"]
+  //   }
+  // ],
     'import/resolver': {
       node: {
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
+        // moduleDirectory: ['src/', 'node_modules'],
       },
     },
   },

@@ -8,7 +8,7 @@ export default {
     components: ProfileImg,
 } as Meta;
 
-export const Profile = (args) => <ProfileImg {...args}/>
+export const Profile = () => <ProfileImg/>
 Profile.args = {
     width: '180px',
     height: '180px',
