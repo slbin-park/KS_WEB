@@ -1,14 +1,14 @@
+import { type } from 'os';
 import React from 'react';
 import styled, { css } from 'styled-components';
 import { CheckboxType } from './checkboxType';
 
-const StyledCheckbox = styled.select.attrs((props) => ({}))<InputType>`
+const StyledCheckbox = styled.input.attrs((props) => ({}))<CheckboxType>`
   ${(props) => {
-    
+    const type = {'radio':'radio','checkbox':'checkbox'}
 
   return css`
-    /* background-repeat: no-repeat;
-    
+     background-repeat: no-repeat;
     width: 50%;
     height: 45px;
     border: none;
