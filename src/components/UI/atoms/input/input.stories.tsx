@@ -10,27 +10,36 @@ export default {
   parameters: {},
   argTypes:{
     // placeholder: args.stirng.isRequired,
-    // size: .oneOf(["sm","md","lg"]),
+    width:{
+      control: {
+        type: 'radio',
+        options: ['large', 'medium','small'],
+      },
+    },
+    size:{}
   }
   
 } as Meta;
 
 const Template: Story<InputType> = (args) => (
-  <InputComponent
+  <div style={{width:`${args.width}px`}}>
+<InputComponent
       
       {...args}
       
     />
+  </div>
+  
 );
 
 export const Search = Template.bind({});
 Search.parameters = {};
 Search.args = {
-  width:'black',
+  width:'small',
   placeholder:'검색할 단어를 입력하세요',
-  size:"lg",
   
 };
+
 
 
 

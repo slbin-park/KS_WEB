@@ -4,12 +4,12 @@ import { InputType } from './inputType';
 
 const StyledInput = styled.input.attrs((props) => ({}))<InputType>`
   ${(props) => {
-    
+    const width = {'small' : '100px' , 'midium' : '200px','large':'500px'}
 
   return css`
-    /* background-repeat: no-repeat;
+    background-repeat: no-repeat;
     
-    width: 50%;
+    width: ${width[props.width]};
     height: 45px;
     border: none;
     padding: 5px 10px;
@@ -17,16 +17,18 @@ const StyledInput = styled.input.attrs((props) => ({}))<InputType>`
     font-weight: 500;
     outline: none;
     cursor: pointer;
-    transition: all 0.3s; */
+    transition: all 0.3s; 
     display: block;
-    width:400px;
     padding-left: 1rem;
     padding-right:1rem;
     border: 1px solid;
     border-color: inherit;
     background-color: #fff;
+
   `}}
   ;
 `;
 
 export default StyledInput;
+
+
