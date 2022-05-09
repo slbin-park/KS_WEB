@@ -9,7 +9,7 @@ import React, { useEffect, useState, useRef } from 'react';
 
 import StyledInput from './inputStyle';
 
-const InputComponent: React.FC<any> = (props) => {
+const InputComponent: React.FC<any> = (props,size) => {
   return (
     <StyledInput onChange={props.onChange}   {...props}  />
      

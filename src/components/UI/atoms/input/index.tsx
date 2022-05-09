@@ -4,8 +4,8 @@ import InputComponent from './input';
 import {InputType} from './inputType'
 
 
-const Input: React.FC<InputType> = (props, {}: InputType) => (
-  <InputComponent {...props} />
+const Input: React.FC<InputType> = (props, {size = 'small'}: InputType) => (
+  <InputComponent {...props} size = {size} />
 );
 
 export default Input;

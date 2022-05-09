@@ -9,26 +9,30 @@ export default {
   component: CheckboxComponent,
   parameters: {},
   argTypes:{
-    // placeholder: args.stirng.isRequired,
-    // size: .oneOf(["sm","md","lg"]),
+    opt:{
+      control: {
+        type: 'radio',
+        options: ['radio', 'checkbox'],
+      },
+    },
   }
+  
   
 } as Meta;
 
 const Template: Story<CheckboxType> = (args) => (
+
   <CheckboxComponent
-      
-      {...args}
-      
+  {...args}
+  type={args.opt}
+  
     />
 );
 
-export const Search = Template.bind({});
-Search.parameters = {};
-Search.args = {
-  width:'black',
-  placeholder:'검색할 단어를 입력하세요',
-  size:"lg",
+export const Check = Template.bind({});
+Check.parameters = {};
+Check.args = {
+  opt:'radio',
   
 };
 
