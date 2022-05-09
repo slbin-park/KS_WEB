@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import { Profile, UserName, Items } from './sideItems_style';
 
-export default function SideItems() {
+export default function SideItems(props) {
     const profileName = {title: "profile name", article: "Garry"};
     const profileImg = {title: "profile img", path: "img/profile.jpg"};
 
@@ -15,7 +15,7 @@ export default function SideItems() {
     ];
     return(
         <>
-        <Profile src = { profileImg.path }/>
+        <Profile src = { profileImg.path } { ...props }/>
         <UserName>Garry</UserName>
         {menu.map((menu, index) => {
             return (

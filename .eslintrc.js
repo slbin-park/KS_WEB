@@ -11,6 +11,9 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
     'next',
   ],
   parserOptions: {
@@ -46,15 +49,17 @@ module.exports = {
     'react/function-component-definition': 1,
   },
   settings: {
-    "import/no-extraneous-dependencies": [
-      "error", 
-      {"devDependencies": 
-      ["**/*.test.ts", "**/*.test.tsx"]
-    }
-  ],
+    // "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+  //   "import/no-extraneous-dependencies": [
+  //     "error", 
+  //     {"devDependencies": 
+  //     ["**/*.test.ts", "**/*.test.tsx"]
+  //   }
+  // ],
     'import/resolver': {
       node: {
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
+        // moduleDirectory: ['src/', 'node_modules'],
       },
     },
   },
