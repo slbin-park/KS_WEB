@@ -3,13 +3,13 @@ import Link from "next/link";
 
 import { Logo, Register } from './navItems_style';
 
-export default function NavItems() {
+export default function NavItems(props) {
     
     return(
         <>
         <Logo>
             <Link href = "/">
-                <span>KS Web</span>
+                <a className = "LogoImg">KS WEB</a>
             </Link>
         </Logo>
         <Register>

@@ -1,11 +1,15 @@
 import Button from './button';
-import Input from './input';
+import UserNameDiv from './UserName/UserName';
+import Profile from './profile/profile';
+import Items from './items/items';
+import Hamberger from './Hamberger/Hamberger';
+import NavItems from './navItems/navItems';
+// import DropDownBtn from './dropDownBtn/dropDownBtn';
 
 const Atoms = {
-  Button,Input
+  Button, Items, Profile, Hamberger, UserNameDiv, NavItems
 };
 
 export default Atoms;
 
-export { Button,Input };
- 
+export { Button, Items, Profile, Hamberger, UserNameDiv, NavItems };
