@@ -21,4 +21,8 @@ const Globals = {
         $color_bloack : '#262626',
     }
 };
+<<<<<<< HEAD
 export default Globals;
+=======
+export default Globals;
+>>>>>>> a0fefe00c70b36134fe52982daef77adfe4b91ea

@@ -1,8 +1,8 @@
-import React, { useEffect, useState, useRef } from 'react'
-import { Meta, Story } from '@storybook/react'
+import React, { useEffect, useState, useRef } from 'react';
+import { Meta, Story } from '@storybook/react';
 // import StoriesLayout from "StoriesLayout";
-
-import ButtonComponent from './button'
+import {ButtonType} from './buttonType';
+import ButtonComponent from './button';
 
 export default {
   title: 'Atoms/Button',
@@ -12,7 +12,7 @@ export default {
     backColor: {
       control: {
         type: 'select',
-        options: ['primary', 'gradient', 'black'],
+        options: ['primary', 'gradient', 'black','blue'],
       },
     },
     type: {
@@ -22,51 +22,26 @@ export default {
       },
     },
   },
-} as Meta
+} as Meta;
 
-const Template: Story<any> = (args) => (
+const Template: Story<ButtonType> = (args) => (
   <>
-    <span className="info">Primary</span>
+    <span className={'info'}>Primary</span>
     <ButtonComponent
       children={args.children}
-      onClick={args.onClick}
       type={args.type}
-      backColor={args.color}
       {...args}
+      width = 'blue'
     />
 
-    <span className="info">Submit</span>
-    <ButtonComponent
-      children={args.children}
-      onClick={args.onClick}
-      type={args.type}
-      backColor="tomato"
-    />
-
-    <span className="info">Black</span>
-    <ButtonComponent
-      children={args.children}
-      onClick={args.onClick}
-      type={args.type}
-      backColor="black"
-    />
   </>
-)
+);
 
-export const Default = Template.bind({})
-Default.parameters = {}
+export const Default = Template.bind({});
+Default.parameters = {};
 Default.args = {
-  width: '300px',
+  width: 'black',
   children: 'TEST',
   type: 'none',
-  backColor: 'Primary',
-}
-
-export const Submit = Template.bind({})
-Submit.parameters = {}
-Submit.args = {
-  width: '300px',
-  children: 'Submit',
-  type: 'submit',
-  backColor: 'tomato',
-}
+  backColor: 'primary',
+};
