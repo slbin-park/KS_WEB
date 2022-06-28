@@ -1,0 +1,40 @@
+body{
+  text-align: center;
+}
+
+.header{
+  display: block;
+  width: 100%;
+}
+
+.horizon {
+  position: relative;
+  display: inline-block;
+  top: 0;
+  right: 0;
+  width: 750px;
+  height: 1200px;
+  margin-top: 0px;
+  padding-top: 1px;
+  background: #abc;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform: rotate(-90deg);
+  padding: 250px 0 0 0;
+}
+
+.horizon::-webkit-scrollbar {
+  display: none;
+}
+
+.horizon div{
+    display: block;
+    background-color: #294872;
+    padding: 5px;
+    transform: rotate(90deg);
+    transform-origin: right top;
+    width: 750px;
+    height: 750px;
+    margin: 850px 0;
+    padding-top: 100px;
+}
